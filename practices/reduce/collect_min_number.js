@@ -1,8 +1,11 @@
-'use strict';
+'use strict'
 
 function collect_min_number(collection) {
-  //在这里写入代码
+  function sortBy(a, b) {
+    return a - b
+  }
+  collection.sort(sortBy)
+  return collection[0]
 }
 
-module.exports = collect_min_number;
-
+module.exports = collect_min_number

@@ -1,7 +1,11 @@
-'use strict';
+'use strict'
 
 function collect_max_number(collection) {
-  //在这里写入代码
+  function sortNum(a, b) {
+    return b - a
+  }
+  collection.sort(sortNum)
+  return collection[0]
 }
 
-module.exports = collect_max_number;
+module.exports = collect_max_number

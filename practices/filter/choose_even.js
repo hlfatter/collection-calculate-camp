@@ -1,8 +1,13 @@
-'use strict';
+'use strict'
 
 function choose_even(collection) {
+  var result = collection.filter(function(value, index, collection) {
+    return value % 2 === 0
+  })
 
-  //在这里写入代码
+  return result
 }
 
-module.exports = choose_even;
+module.exports = choose_even
+
+function add() {}
